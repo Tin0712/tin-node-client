@@ -50,7 +50,7 @@ app.use(express.json());
 
 /* make sure this comes after the body has been converted to json */
 if (process.env.WEBHOOK_SECRET) {
-  app.use(WebhookResponse.verifyJambonzSignature(process.env.WEBHOOK_SECRET));
+  app.use(WebhookResponse.verifytinSignature(process.env.WEBHOOK_SECRET));
 }
 
 /* if we get here we know the request was signed with our webhook secret */
