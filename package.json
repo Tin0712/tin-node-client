@@ -1,6 +1,6 @@
 {
   "name": "tin-node-client",
-  "version": "0.3.30",
+  "version": "0.3.31",
   "description": "Node.js client for building applications (abc.org)",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "jslint": "eslint lib"
   },
   "author": {
-    "name": "Dave Horton"
+    "name": "tin"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "url": "https://github.com/Tin0712/tin-node-client.git/issues"
   },
   "homepage": "https://github.com/Tin0712/tin-node-client.git#readme",
-  "_id": "tin-node-client@0.3.30",
+  "_id": "tin-node-client@0.3.31",
   "_nodeVersion": "18.14.1",
   "_npmVersion": "9.3.1",
   "dist": {
