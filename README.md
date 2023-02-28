@@ -1,21 +1,21 @@
 # tin-node-client
 
-A Node.js SDK for the open source [jambonz](docs.jambonz.org) CPaaS platform.  Node.js applications can use this library to respond to [jambonz webhooks](https://docs.jambonz.org/jambonz/) and to make [REST API calls](https://docs.jambonz.org/rest/) to a jambonz platform.
+A Node.js SDK for the open source CPaaS platform.  Node.js applications can use this library to respond to [webhooks] and to make [REST API calls] to a sbc platform.
 
-> Note: One suggested way to get up and running with this Node SDK is to use the `npx create-jambonz-app` command, which will scaffold out a jambonz application for you using this SDK.
+> Note: One suggested way to get up and running with this Node SDK is to use the `npx create-tin-app` command, which will scaffold out a application for you using this SDK.
 
 ### Webooks
 To respond to webhooks, you will need a lightweight http server.  An example is shown below using [express](expressjs.com).
 ```
-const {WebhookResponse} = require('@jambonz/node-client');
+const {WebhookResponse} = require('tin-node-client');
 const express = require('express');
 const app = express();
 
 app.use(express.json());
 
 app.post('/my-app', (req, res) => {
-  const jambonz = new WebhookResponse();
-  jambonz
+  const app = new WebhookResponse();
+  app
     .pause({length: 1.5})
     .say({
       text: 'Good morning. This is a simple test of text to speech functionality.  That is all.  Goodbye',
@@ -31,16 +31,16 @@ app.listen(port, () => {
   logger.info(`listening at http://localhost:${port}`);
 });
 ```
-[See here](https://docs.jambonz.org/jambonz/) for information on the available verbs you can use in a jambonz application, and for their associated properties.
+[See here](https://docs.abc.org/) for information on the available verbs you can use in a application, and for their associated properties.
 
 #### Verifying webhook signature
-If your jambonz server includes a Jambonz-Signature header on webhook requests, you can verify that the request was signed by jambonz using your webhook secret as follows:
+If your server includes a Signature header on webhook requests, you can verify that the request was signed by using your webhook secret as follows:
 
 ```
-const {WebhookResponse} = require('@jambonz/node-client');
+const {WebhookResponse} = require('tin-node-client');
 
 if (process.env.WEBHOOK_SECRET) {
-  app.use(WebhookResponse.verifyJambonzSignature(process.env.WEBHOOK_SECRET));
+  app.use(WebhookResponse.verifytinSignature(process.env.WEBHOOK_SECRET));
 }
 
 const express = require('express');
@@ -60,10 +60,10 @@ app.post('/my-app', (req, res) => { ...})
 ### REST API calls
 
 #### Creating a client
-To use the REST API you need to know your account sid and api key (both of which you can view in the jambonz portal).  You generate a REST client as shown below.
+To use the REST API you need to know your account sid and api key.  You generate a REST client as shown below.
 ```
-const client = require('@jambonz/node-client')(<my-account-sid>, <my-api-key>, {
-  baseUrl: http://<my-jambonz-sbc>
+const client = require('tin-node-client')(<my-account-sid>, <my-api-key>, {
+  baseUrl: http://<my-sbc>
 });
 ```
 
@@ -82,7 +82,7 @@ const sid = await client.calls.create({
   call_status_hook: 'http://myurl.com/call-status'
 });
 ```
-[See here](https://docs.jambonz.org/rest/#create-a-call) for further details.
+[See here](https://docs.abc.org/rest/#create-a-call) for further details.
 
 ##### Updating a call
 To update a call in progress -- for example to mute/unmute, hangup the call etc -- you need to know the call sid.  Typically you would get this from a webhook sent from an existing call event.
@@ -97,12 +97,11 @@ To update a call in progress -- for example to mute/unmute, hangup the call etc 
     }
   });
 ```
-[See here](https://docs.jambonz.org/rest/#updating-a-call) for further details.
+[See here](https://docs.abc.org/rest/#updating-a-call) for further details.
 
 ### Example 
 
-See [here](https://github.com/jambonz/jambonz-node-example-app) for a full-featured example application built using this API.
+See [here](https://github.com/abc/tin-node-example-app) for a full-featured example application built using this API.
 
 ### Status
 This project is under active development and is currently very much pre-beta.
-
