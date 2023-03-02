@@ -34,13 +34,13 @@ test('unit tests', (t) => {
   //let task = makeTask(logger, require('./data/good/sip-decline'));
   //t.ok(task.name === 'sip:decline', 'parsed sip:decline');
 
-  //t.throws(errInvalidInstruction, /malformed jambonz application payload/, 'throws error for invalid instruction');
+  //t.throws(errInvalidInstruction, /malformed abc application payload/, 'throws error for invalid instruction');
   //t.throws(errUnknownProperty, /unknown property/, 'throws error for invalid instruction');
   //t.throws(errMissingProperty, /missing value/, 'throws error for missing required property');
   //t.throws(errInvalidType, /invalid data type/, 'throws error for invalid data type');
   //t.throws(errBadEnum, /must be one of/, 'throws error for invalid enum');
-  //t.throws(errBadPayload, /malformed jambonz application payload/, 'throws error for invalid payload with multiple keys');
-  //t.throws(errBadPayload2, /malformed jambonz application payload/, 'throws error for invalid payload that is not an object');
+  //t.throws(errBadPayload, /malformed abc application payload/, 'throws error for invalid payload with multiple keys');
+  //t.throws(errBadPayload2, /malformed abc application payload/, 'throws error for invalid payload that is not an object');
 
   t.end();
 });

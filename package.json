@@ -42,20 +42,6 @@
   "_id": "tin-node-client@0.3.31",
   "_nodeVersion": "18.14.1",
   "_npmVersion": "9.3.1",
-  "dist": {
-    "integrity": "sha512-+DQ8rOchTISCLI7/kMzx/oaE20nwa73cqisFSS2u5+xbEO3QN2tG1OMM6XV7GwzC1ZzHJFU207++YVvmwNgSlA==",
-    "shasum": "23677d82446172e84232133354fa57df34ea2063",
-    "tarball": "https://registry.npmjs.org/@jambonz/node-client/-/node-client-0.3.42.tgz",
-    "fileCount": 35,
-    "unpackedSize": 31265,
-    "signatures": [
-      {
-        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
-        "sig": "MEUCIAJaCRXqf2TuEzoqcSat6QSk6Ur9Bpy4jhz7Zgq0JvzUAiEAsU8kwixXdt8Hx6ET45PFWxIi3mlfQwZvuRrXd5UPvwE="
-      }
-    ],
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj+RJhACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpZBxAAn8M5gK4ZDUBcVd+rS0KcSdMsjTa57jtWeT7eaqjCGFajOUWN\r\n/SDlpqM2De1hxD7rz4iFc5Afb6hiY5n5mqBL16Nm9eQGVEooq2phvdhtGYXC\r\nBBKRAyejd+0nTAyRuxhWbWK6S1GybMsUxqeZH271+6M06astkZR4dRVjG/6W\r\nhTtiovqjpLHEcueEQU+mn2BprstBWrOb/N1Jh19VyQmekUM3s8J5mW1qYkcF\r\nu+HY4Ryksb4tJPEmS+SrIpB7kRTHjOtDelyEqtd0R6KWJZqkiTGHJg5/2s+n\r\nmwaFFRJsltyqwP4k0jJA7/70EzN8Qe2b+wnmGuviXcLfobENOx7kWGAC3kIz\r\nQVdBbcB4AYhtOTfCiAcbE1WB78R/j9XCiVvxnLkT0c+hlH6v39KzM4Smx5m3\r\n3agn6zrdPx0awuWNzyhJEoch2pGe8KjebcNXTqvgYctrgEQvOiOSag6zCQaX\r\nXsDdnQhHATv/778tIVSsUbpZLGzhBrgeSxKDKkd3mxb9IXLT2X2Q3B0aJY/s\r\nYHl5mqTRMY+iyt8TEFtqT6R4g7RuF3CjEEhGiIfWqRs1sCZZhECHB/YoU8YY\r\nYpUy9d73vqNBW51z5KsVzCEvc8GPMIG+CwQKA9+9AgBTqDZqjZuJ9fbzynuv\r\nfJ6+A63gKutsd2DtOmPltOtq3r6whZT7Tw0=\r\n=gxrb\r\n-----END PGP SIGNATURE-----\r\n"
-  },
   "_npmUser": {
     "name": "tin",
     "email": "httin77v1@gmail.com"
@@ -67,13 +53,6 @@
       "email": "daveh@beachdognet.com"
     }
   ],
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/node-client_0.3.42_1677267552885_0.6962698792544644"
-  },
-  "_hasShrinkwrap": false,
-  "_shasum": "23677d82446172e84232133354fa57df34ea2063",
-  "_resolved": "https://registry.npmjs.org/@jambonz/node-client/-/node-client-0.3.42.tgz",
-  "_from": "@jambonz/node-client@>=0.3.42 <0.4.0",
+
   "readme": "ERROR: No README data found!"
 }
