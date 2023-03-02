@@ -1,6 +1,6 @@
 {
   "name": "tin-node-client",
-  "version": "0.3.32",
+  "version": "0.3.33",
   "description": "Node.js client for building applications (abc.org)",
   "main": "lib/index.js",
   "scripts": {
