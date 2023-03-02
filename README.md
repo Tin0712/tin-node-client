@@ -1,4 +1,4 @@
-# tin-node-client
+# @tin0712/node-client
 
 A Node.js SDK for the open source CPaaS platform.  Node.js applications can use this library to respond to [webhooks] and to make [REST API calls] to a sbc platform.
 
@@ -7,7 +7,7 @@ A Node.js SDK for the open source CPaaS platform.  Node.js applications can use 
 ### Webooks
 To respond to webhooks, you will need a lightweight http server.  An example is shown below using [express](expressjs.com).
 ```
-const {WebhookResponse} = require('tin-node-client');
+const {WebhookResponse} = require('@tin0712/node-client');
 const express = require('express');
 const app = express();
 
@@ -37,7 +37,7 @@ app.listen(port, () => {
 If your server includes a Signature header on webhook requests, you can verify that the request was signed by using your webhook secret as follows:
 
 ```
-const {WebhookResponse} = require('tin-node-client');
+const {WebhookResponse} = require('@tin0712/node-client');
 
 if (process.env.WEBHOOK_SECRET) {
   app.use(WebhookResponse.verifytinSignature(process.env.WEBHOOK_SECRET));
@@ -62,7 +62,7 @@ app.post('/my-app', (req, res) => { ...})
 #### Creating a client
 To use the REST API you need to know your account sid and api key.  You generate a REST client as shown below.
 ```
-const client = require('tin-node-client')(<my-account-sid>, <my-api-key>, {
+const client = require('@tin0712/node-client')(<my-account-sid>, <my-api-key>, {
   baseUrl: http://<my-sbc>
 });
 ```

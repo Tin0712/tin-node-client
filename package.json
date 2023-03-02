@@ -1,6 +1,6 @@
 {
-  "name": "tin-node-client",
-  "version": "0.3.33",
+  "name": "@tin0712/node-client",
+  "version": "0.3.31",
   "description": "Node.js client for building applications (abc.org)",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "tin-verb-specifications": "^0.0.1",
+    "@tin0712/verb-specifications": "^0.0.1",
     "bent": "^7.3.12",
     "debug": "^4.3.4",
     "parseurl": "^1.3.3",
@@ -39,7 +39,7 @@
     "url": "https://github.com/Tin0712/tin-node-client.git/issues"
   },
   "homepage": "https://github.com/Tin0712/tin-node-client.git#readme",
-  "_id": "tin-node-client@0.3.31",
+  "_id": "@tin0712/node-client@0.3.31",
   "_nodeVersion": "18.14.1",
   "_npmVersion": "9.3.1",
   "_npmUser": {
